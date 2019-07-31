@@ -1,0 +1,16 @@
+<h1> Click Event</h1>
+
+<button  >Click me no event</button>
+<!--  
+  changeTitle() is a function from the app.component.ts and is invoked when we click.
+  This is how we can invoke functions on the click event, ( click ). 
+ -->
+<button (click)="changeTitle()" >Click me with event</button>
+<p> Click event is {{ isClicked }} </p>
+
+
+<h4> Keyup.Enter Event </h4>
+<!-- Each time we hit enter while on the input tag the 
+onEnter function is invoked
+ -->
+<input [(ngModel)]="enterHit" (keyup.enter)="onEnter()" >
